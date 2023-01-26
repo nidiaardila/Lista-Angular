@@ -1,0 +1,24 @@
+
+h1 {
+  text-align: center; 
+}
+
+.header {
+  font-weight: bold;
+  background-color: #cfd7fa; 
+}
+
+span {
+  display: inline-block; /*los datos ocupen solo el espacio que necesitan */
+  width: 25%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.green {
+  background-color: rgb(195, 240, 184);
+}
+
+.gray {
+  background-color: rgb(245, 245, 253);
+}

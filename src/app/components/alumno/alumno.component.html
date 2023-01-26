@@ -1,0 +1,25 @@
+
+<div class="container">
+    <h1 class="m-5">Lista de alumnos</h1>
+<div class="header center-div-space mb-3">
+    <span>Id</span>
+    <span>Nombre</span>
+    <span>Apellido</span>
+    <span>Becado</span>
+</div>
+
+<div *ngFor="let alumno of alumnos" [ngClass]="{'green': resaltar && alumno.becado, 'gray': !resaltar || !alumno.becado }" class="mb-2">
+    <span>{{ alumno.id }}</span>
+    <span>{{ alumno.nombre }}</span>
+    <span>{{ alumno.apellido }}</span>
+    <span>{{ alumno.becado }}</span>
+</div>
+
+<div>
+<button id="btn" class="btn btn-dark m-2" (click)="resaltarBecados()">Resaltar becados</button> 
+<button id="btn" class="btn btn-dark" (click)="volver()">Volver</button>
+</div>
+
+
+
+
